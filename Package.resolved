@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble.git",
+        "state": {
+          "branch": null,
+          "revision": "7a46a5fc86cb917f69e3daf79fcb045283d8f008",
+          "version": "8.1.2"
+        }
+      },
+      {
+        "package": "Quick",
+        "repositoryURL": "https://github.com/Quick/Quick.git",
+        "state": {
+          "branch": null,
+          "revision": "09b3becb37cb2163919a3842a4c5fa6ec7130792",
+          "version": "2.2.1"
+        }
+      },
+      {
+        "package": "ReactiveSwift",
+        "repositoryURL": "https://github.com/AndreiVidrasco/ReactiveSwift",
+        "state": {
+          "branch": "android",
+          "revision": "66aa8eccee8e582da87ed4e9bbc757bb02b90c21",
+          "version": null
+        }
+      },
+      {
+        "package": "reactiveswift-composable-architecture",
+        "repositoryURL": "https://github.com/AndreiVidrasco/reactiveswift-composable-architecture",
+        "state": {
+          "branch": "android",
+          "revision": "2311014bc67afa2ce7bddaf2f241d322d8364384",
+          "version": null
+        }
+      },
+      {
+        "package": "swift-case-paths",
+        "repositoryURL": "https://github.com/AndreiVidrasco/swift-case-paths",
+        "state": {
+          "branch": "android",
+          "revision": "980b1bc2737246140c3267d90ce24d93d339ab15",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
