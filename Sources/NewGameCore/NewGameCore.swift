@@ -1,6 +1,5 @@
 import ComposableArchitecture
 import GameCore
-import TicTacToeCommon
 
 public struct NewGameState: Equatable {
   public var game: GameState?

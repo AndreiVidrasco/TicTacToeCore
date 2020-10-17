@@ -2,11 +2,10 @@ import AuthenticationClient
 import ComposableArchitecture
 import Dispatch
 import ReactiveSwift
-import TicTacToeCommon
 import TwoFactorCore
 
 public struct LoginState: Equatable {
-  public var alert: AlertState<LoginAction>?
+  public var alert: AlertState?
   public var email = ""
   public var isFormValid = false
   public var isLoginRequestInFlight = false

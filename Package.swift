@@ -13,7 +13,6 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(name: "TicTacToeCommon", targets: ["TicTacToeCommon"]),
         .library(name: "LiveAuthenticationClient", targets: ["LiveAuthenticationClient"]),
         .library(name: "AuthenticationClient", targets: ["AuthenticationClient"]),
         .library(name: "GameCore", targets: ["GameCore"]),
@@ -25,18 +24,17 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "https://github.com/AndreiVidrasco/reactiveswift-composable-architecture", .branch("android"))
+        .package(url: "https://github.com/AndreiVidrasco/reactiveswift-composable-architecture", .branch("android2"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
-        .target(name: "TicTacToeCommon", dependencies: ["ComposableArchitecture"]),
-        .target(name: "LiveAuthenticationClient", dependencies: ["AuthenticationClient", "TicTacToeCommon"]),
-        .target(name: "AuthenticationClient", dependencies: ["TicTacToeCommon"]),
-        .target(name: "GameCore", dependencies: ["TicTacToeCommon"]),
-        .target(name: "NewGameCore", dependencies: ["GameCore", "TicTacToeCommon"]),
-        .target(name: "TwoFactorCore", dependencies: ["AuthenticationClient", "TicTacToeCommon"]),
-        .target(name: "LoginCore", dependencies: ["TwoFactorCore"]),
-        .target(name: "AppCore", dependencies: ["LoginCore", "NewGameCore"]),
+        .target(name: "LiveAuthenticationClient", dependencies: ["AuthenticationClient", "ComposableArchitecture"]),
+        .target(name: "AuthenticationClient", dependencies: ["ComposableArchitecture"]),
+        .target(name: "GameCore", dependencies: ["ComposableArchitecture"]),
+        .target(name: "NewGameCore", dependencies: ["GameCore", "ComposableArchitecture"]),
+        .target(name: "TwoFactorCore", dependencies: ["AuthenticationClient", "ComposableArchitecture"]),
+        .target(name: "LoginCore", dependencies: ["TwoFactorCore", "ComposableArchitecture"]),
+        .target(name: "AppCore", dependencies: ["LoginCore", "NewGameCore", "ComposableArchitecture"]),
     ]
 )

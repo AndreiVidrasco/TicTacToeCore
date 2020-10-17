@@ -32,8 +32,8 @@
         "package": "reactiveswift-composable-architecture",
         "repositoryURL": "https://github.com/AndreiVidrasco/reactiveswift-composable-architecture",
         "state": {
-          "branch": "android",
-          "revision": "2311014bc67afa2ce7bddaf2f241d322d8364384",
+          "branch": "android2",
+          "revision": "3707c9d3100228bdf395837780a2963b67dc4617",
           "version": null
         }
       },
